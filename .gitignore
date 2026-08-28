@@ -1,0 +1,25 @@
+# Зависимости
+node_modules/
+
+# Локальные данные приложения (создаётся автоматически при первом запуске)
+data.json
+
+# Переменные окружения
+.env
+.env.local
+
+# Логи
+*.log
+npm-debug.log*
+logs/
+
+# PM2
+.pm2/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

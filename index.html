@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Доска задач</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="board-title-wrap">
+      <span class="pin-badge"></span>
+      <input id="boardTitle" value="Доска задач" spellcheck="false">
+    </div>
+    <div>
+      <div class="sub" id="statusLine">загрузка…</div>
+    </div>
+  </header>
+
+  <div class="board" id="board"></div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal">
+    <button class="close-x" id="closeModal">✕</button>
+    <label>Название карточки</label>
+    <input type="text" id="editTitle">
+    <label>Описание</label>
+    <textarea id="editDesc" placeholder="Подробности, ссылки, заметки…"></textarea>
+    <label>Метка</label>
+    <div class="label-picker" id="labelPicker"></div>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="deleteCardBtn" style="color:#B8654F;">Удалить карточку</button>
+      <div class="right">
+        <button class="btn-ghost" id="cancelEdit">Отмена</button>
+        <button class="btn-primary" id="saveEdit">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
